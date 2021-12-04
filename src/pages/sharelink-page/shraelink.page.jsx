@@ -113,7 +113,7 @@ const ProfilePage = (props) => {
     }
   }
   return (
-      <div className="wrapper bg-white" style={{marginTop:'150px'}}>
+    <div className="wrapper bg-white" style={{ marginTop: '5%', boxShadow:'5px 3px 11px -2px'}}>
         <div>
         <div className="border-bottom" style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px', paddingBottom: '20px' }}>
           <button style={{ marginRight: '20px' }} onClick={() => setToggleProfilePage("aboutMe")} className={setViewClassName("aboutMe")}>About Me</button>
