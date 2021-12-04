@@ -291,6 +291,7 @@ function MainPage(props) {
                 onChange={e => handleUploadFile(e.target.files[0], "profileImage")}
                 // onChange={e => handleChangeImageProfile(e)}
                 type="file"
+                accept="image/png"
                 id="upload"
                 disabled={loadingUploadImage === "profileImage"}
                 hidden
@@ -453,6 +454,7 @@ function MainPage(props) {
                                 type="file"
                                 id={item}
                                 hidden
+                                accept="image/png"
                               />
                               <label className="btn button border" htmlFor={item}>
                                 {loadingUploadImage === item && <>
@@ -516,7 +518,7 @@ function MainPage(props) {
                               <input
                                 type="text"
                                 className="bg-light form-control"
-                                placeholder="Steve"
+                                placeholder="Software Engineer"
                                 onChange={e =>
                                   handleChangeJobExperience(
                                     item,

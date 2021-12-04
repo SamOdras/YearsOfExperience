@@ -86,6 +86,29 @@ const ProfilePage = (props) => {
               </div>
             )
           })}
+          {!jobExperienceValue && !jobExperienceKey && <div style={{ paddingLeft: '30px' }}>
+            <div className="d-flex align-items-start">
+              <div>
+                <img
+                  alt="This is an some"
+                  src={defaultImage}
+                  className="img"
+                  style={{ height: '50px', width: '50px' }}
+                />
+              </div>
+
+              <div
+                style={{ marginLeft: "10px" }}
+                className="pl-sm-4 pl-2"
+                id="img-section"
+                alt="this is some"
+              >
+                <h5>Job Title - Company</h5>
+                <p>First Year - End Year</p>
+              </div>
+            </div>
+            <p>{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloremque iure cupiditate sint inventore, tempore harum omnis praesentium necessitatibus deserunt vero a quam quibusdam? Reprehenderit adipisci ipsa magni totam nulla."}</p>
+          </div>}
       </>)
     } else {
       return (
