@@ -44,6 +44,11 @@ const ProfilePage = (props) => {
   const generateUrlShareProfile = (id = "") => {
     let value = `${window.location.origin}/${id || ""}`;
     navigator.clipboard.writeText(value);
+    setNotification({
+      message: "Link is copied",
+      status: "Success",
+      icon: "success"
+    })
   }
 
   const selectRender = () => {
